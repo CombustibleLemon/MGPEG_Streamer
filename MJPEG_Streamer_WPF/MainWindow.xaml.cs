@@ -21,7 +21,7 @@ namespace MJPEG_Streamer_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private MJPEGStream VideoStream;
+        private static MJPEGStream VideoStream;
 
         public MainWindow()
         {

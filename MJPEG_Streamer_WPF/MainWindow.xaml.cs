@@ -36,5 +36,10 @@ namespace MJPEG_Streamer_WPF
             VideoStream.Source = "http://starbucksucks.pwnage/thing.mjpeg";
             VideoStream.Start();
         }
+
+        private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            VideoStream.Stop();
+        }
     }
 }

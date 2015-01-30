@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AForge.Video;
 
 namespace MJPEG_Streamer_WPF
 {
@@ -20,9 +21,12 @@ namespace MJPEG_Streamer_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MJPEGStream VideoStream;
+
         public MainWindow()
         {
             InitializeComponent();
+            VideoStream = new MJPEGStream();
         }
     }
 }

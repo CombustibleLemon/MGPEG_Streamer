@@ -1,6 +1,6 @@
-﻿<Window x:Class="MJPEG_Streamer_WPF.MainWindow"
+﻿<Window x:Name="MainWindow1" x:Class="MJPEG_Streamer_WPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="OMG A MJPEG STREAM" Icon="images/icons/fox.ico" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Cursor="No" ToolTip="This is an image stream." WindowStyle="ToolWindow">
     <Image />
 </Window>

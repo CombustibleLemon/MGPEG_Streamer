@@ -35,7 +35,13 @@ namespace MJPEG_Streamer_WPF
         private void setupVideoStream()
         {
             VideoStream.Source = "http://starbucksucks.pwnage/thing.mjpeg";
+            VideoStream.NewFrame += new EventHandler(VideoStream_NewFrame);
             VideoStream.Start();
+        }
+
+        private void VideoStream_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
+        {
+
         }
 
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)

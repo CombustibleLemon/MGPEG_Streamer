@@ -27,6 +27,13 @@ namespace MJPEG_Streamer_WPF
         {
             InitializeComponent();
             VideoStream = new MJPEGStream();
+
+            setupVideoStream();
+        }
+
+        private void setupVideoStream()
+        {
+
         }
     }
 }

@@ -26,14 +26,14 @@ namespace MJPEG_Streamer_WPF
         public MainWindow()
         {
             InitializeComponent();
-            VideoStream = new MJPEGStream();
 
+            VideoStream = new MJPEGStream();
             setupVideoStream();
         }
 
         private void setupVideoStream()
         {
-            VideoStream.Source      =   "http://starbucksucks.pwnage/thing.mjpeg";
+            VideoStream.Source = "http://starbucksucks.pwnage/thing.mjpeg";
             VideoStream.Start();
         }
     }

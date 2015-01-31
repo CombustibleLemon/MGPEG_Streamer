@@ -25,7 +25,7 @@ namespace MJPEG_Streamer_WPF
         /// <summary>
         /// The URL for the MJPEG stream
         /// </summary>
-        private const string _mjpeg_url = "http://216.8.159.21/mjpg/video.mjpg";
+        private string mjpegUrl { get; }
         readonly MjpegDecoder _mjpeg;
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace MJPEG_Streamer_WPF
             _mjpeg = new MjpegDecoder();
             _mjpeg.FrameReady += mjpeg_FrameReady;
             _mjpeg.Error += _mjpeg_Error;
-            _mjpeg.ParseStream(new Uri(_mjpeg_url));
+            _mjpeg.ParseStream(new Uri(mjpegUrl));
         }
 
         /// <summary>

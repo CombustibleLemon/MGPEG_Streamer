@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
-using AForge.Video;
 
 namespace MJPEG_Streamer_WPF
 {
@@ -30,7 +29,7 @@ namespace MJPEG_Streamer_WPF
 
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            VideoStream.Stop();
+            
         }
     }
 }

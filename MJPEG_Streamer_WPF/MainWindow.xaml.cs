@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
+using MjpegProcessor;
 
 namespace MJPEG_Streamer_WPF
 {

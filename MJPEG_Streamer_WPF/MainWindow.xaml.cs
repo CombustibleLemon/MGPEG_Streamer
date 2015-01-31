@@ -22,14 +22,10 @@ namespace MJPEG_Streamer_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static MJPEGStream VideoStream;
 
         public MainWindow()
         {
             InitializeComponent();
-
-            VideoStream = new MJPEGStream();
-            setupVideoStream();
         }
 
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)

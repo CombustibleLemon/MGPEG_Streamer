@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MJPEG_Streamer_WPF")]
-[assembly: AssemblyDescription("Views an MJPEG stream")]
+[assembly: AssemblyTitle("WPF MJPEG Streamer")]
+[assembly: AssemblyDescription("A WPF client to view an MJPEG stream")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("PWNAGE Robotics")]
-[assembly: AssemblyProduct("MJPEG_Streamer_WPF")]
-[assembly: AssemblyCopyright("Copyright © PWNAGE Robotics 2015")]
+[assembly: AssemblyProduct("wpf-mjpeg-streamer")]
+[assembly: AssemblyCopyright("Copyright © Dan Leonard 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,6 +51,6 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.1.0.0")]
+[assembly: AssemblyFileVersion("0.1.0.0")]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]

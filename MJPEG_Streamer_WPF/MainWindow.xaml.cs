@@ -22,9 +22,15 @@ namespace MJPEG_Streamer_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// The URL for the MJPEG stream
+        /// </summary>
         private const string _mjpeg_url = "http://216.8.159.21/mjpg/video.mjpg";
         readonly MjpegDecoder _mjpeg;
 
+        /// <summary>
+        /// The constructor for MainWindow
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -34,16 +40,25 @@ namespace MJPEG_Streamer_WPF
             _mjpeg.ParseStream(new Uri(_mjpeg_url));
         }
 
+        /// <summary>
+        /// Event for the MJPEG Decoder that occurs when a new frame is ready for display
+        /// </summary>
         private void mjpeg_FrameReady(object sender, FrameReadyEventArgs e)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Event for the MJPEG Decoder that occurs when there is an error
+        /// </summary>
         private void _mjpeg_Error(object sender, ErrorEventArgs e)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Event for the window that occurs when the window closes
+        /// </summary>
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             

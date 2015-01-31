@@ -30,6 +30,7 @@ namespace MJPEG_Streamer_WPF
             _mjpeg = new MjpegDecoder();
             _mjpeg.FrameReady += mjpeg_FrameReady;
             _mjpeg.Error += _mjpeg_Error;
+            _mjpeg.ParseStream(new Uri(""));
         }
 
         private void mjpeg_FrameReady(object sender, FrameReadyEventArgs e)

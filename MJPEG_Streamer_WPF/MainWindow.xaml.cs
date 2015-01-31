@@ -33,7 +33,10 @@ namespace MJPEG_Streamer_WPF
                 string  url_America_Michigan_Detroit        =   "http://216.8.159.21/mjpg/video.mjpg";
                 string  url_Australia_NewSouthWales_Sydney  =   "http://webcam.progsoc.org/mjpg/video.mjpg";
 
-                return url_America_Michigan_Detroit;
+                if ((new Random()).Next(1) == 1)
+                    return url_America_Michigan_Detroit;
+                else
+                    return url_Australia_NewSouthWales_Sydney;
             }
         }
         readonly MjpegDecoder _mjpeg;

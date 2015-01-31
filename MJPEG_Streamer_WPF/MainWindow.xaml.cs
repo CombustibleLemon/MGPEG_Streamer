@@ -30,7 +30,10 @@ namespace MJPEG_Streamer_WPF
         {
             get
             {
-                return "http://216.8.159.21/mjpg/video.mjpg";
+                string url_America_Michigan_Detroit = "http://216.8.159.21/mjpg/video.mjpg";
+                string url_Australia_NewSouthWales_Sydney = "http://webcam.progsoc.org/mjpg/video.mjpg";
+
+                return url_America_Michigan_Detroit;
             }
         }
         readonly MjpegDecoder _mjpeg;

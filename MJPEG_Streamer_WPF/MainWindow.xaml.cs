@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
-using AForge.Video;
 
 namespace MJPEG_Streamer_WPF
 {
@@ -22,36 +21,15 @@ namespace MJPEG_Streamer_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static MJPEGStream VideoStream;
 
         public MainWindow()
         {
             InitializeComponent();
-
-            VideoStream = new MJPEGStream();
-            setupVideoStream();
-        }
-
-        private void setupVideoStream()
-        {
-            VideoStream.Source = "http://starbucksucks.pwnage/thing.mjpeg";
-            VideoStream.NewFrame += new EventHandler(VideoStream_NewFrame);
-            VideoStream.Start();
-        }
-
-        private void VideoStream_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
-        {
-            ImageDisplay.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
-                                    eventArgs.Frame,
-                                    IntPtr.Zero,
-                                    Int32Rect.Empty,
-                                    BitmapSizeOptions.FromEmptyOptions()
-                                  );
         }
 
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            VideoStream.Stop();
+            
         }
     }
 }

@@ -25,7 +25,7 @@ namespace MJPEG_Streamer_WPF
         /// <summary>
         /// The URL for the MJPEG stream
         /// </summary>
-        private string mjpegUrl
+        private string MjpegUrl
         {
             get
             {
@@ -43,7 +43,7 @@ namespace MJPEG_Streamer_WPF
             _mjpeg = new MjpegDecoder();
             _mjpeg.FrameReady += mjpeg_FrameReady;
             _mjpeg.Error += _mjpeg_Error;
-            _mjpeg.ParseStream(new Uri(mjpegUrl));
+            _mjpeg.ParseStream(new Uri(MjpegUrl));
         }
 
         /// <summary>

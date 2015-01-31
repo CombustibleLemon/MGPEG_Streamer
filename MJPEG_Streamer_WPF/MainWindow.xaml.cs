@@ -45,7 +45,7 @@ namespace MJPEG_Streamer_WPF
         /// </summary>
         private void mjpeg_FrameReady(object sender, FrameReadyEventArgs e)
         {
-            throw new NotImplementedException();
+            ImageDisplay.Source = e.BitmapImage;
         }
 
         /// <summary>

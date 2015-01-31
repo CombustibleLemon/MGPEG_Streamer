@@ -2,5 +2,5 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="OMG AN MJPEG STREAM" Icon="images/icons/fox.ico" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Cursor="No" ToolTip="This is an image stream." Closing="StreamWindow_Closing">
-    <Image x:Name="ImageDisplay" />
+    <Image x:Name="ImageDisplay" Width="640" Height="480" />
 </Window>

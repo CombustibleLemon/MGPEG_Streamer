@@ -22,6 +22,7 @@ namespace MJPEG_Streamer_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        readonly MjpegDecoder _mjpeg;
 
         public MainWindow()
         {

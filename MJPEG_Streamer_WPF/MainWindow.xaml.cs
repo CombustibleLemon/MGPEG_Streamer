@@ -39,16 +39,6 @@ namespace MJPEG_Streamer_WPF
             VideoStream.Start();
         }
 
-        private void VideoStream_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
-        {
-            ImageDisplay.Source = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
-                                    eventArgs.Frame,
-                                    IntPtr.Zero,
-                                    Int32Rect.Empty,
-                                    BitmapSizeOptions.FromEmptyOptions()
-                                  );
-        }
-
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             VideoStream.Stop();

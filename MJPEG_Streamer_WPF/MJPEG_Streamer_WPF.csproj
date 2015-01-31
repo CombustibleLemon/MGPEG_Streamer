@@ -58,6 +58,12 @@
     <ApplicationIcon>images\icons\fox.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Innovative.Geometry">
+      <HintPath>..\packages\Angle.1.0.2.1\lib\net45\Innovative.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="Innovative.SolarCalculator">
+      <HintPath>..\packages\SolarCalculator.1.0.8\lib\net45\Innovative.SolarCalculator.dll</HintPath>
+    </Reference>
     <Reference Include="MjpegProcessor">
       <HintPath>..\packages\MJPEG-Decoder.1.2\lib\net35\MjpegProcessor.dll</HintPath>
     </Reference>

@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
 using MjpegProcessor;
+using Innovative.SolarCalculator;
 
 namespace MJPEG_Streamer_WPF
 {

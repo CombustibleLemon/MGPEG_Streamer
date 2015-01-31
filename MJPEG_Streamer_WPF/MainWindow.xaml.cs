@@ -27,6 +27,19 @@ namespace MJPEG_Streamer_WPF
         public MainWindow()
         {
             InitializeComponent();
+            _mjpeg = new MjpegDecoder();
+            _mjpeg.FrameReady += mjpeg_FrameReady;
+            _mjpeg.Error += _mjpeg_Error;
+        }
+
+        private void mjpeg_FrameReady(object sender, FrameReadyEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void _mjpeg_Error(object sender, ErrorEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void StreamWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
